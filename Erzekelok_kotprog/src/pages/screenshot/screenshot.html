@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Képernyő fotó</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<html>
+<head>
+<style>
+h1 { font-size: 180%; }
+h2 { font-size: 200%; }
+h3 { font-size: 225%; }
+p { font-size: 150%; }
+</style>
+</head>
+<body>
+
+<ion-content padding>
+
+  <h3>Üdvözöllek a Képernyő fotó alkalmazás oldalán</h3>
+
+  <h2>
+    A "Do Screenshot" gomb megnyomására egy képernyő fotó készül az Apple készüléken.
+    A "Delete" nyomógomb hatására pedig kinullázódik a számláló.
+  </h2>
+
+
+<br>
+<br>
+
+  <div class="container">
+	<table class="table" width="100%">
+      <thead>
+        <tr align = "center">
+          
+          <td >
+            <h1>#</h1>
+            </td>
+          <td >
+            <h1>format</h1>
+            </td>
+          <td>
+            <h1>filename</h1>
+            </td>
+          
+        
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="active" align="center">
+          
+          <td>
+            <h1>last</h1>
+            </td>
+          <td>
+            <h1>''.jpg''</h1>
+            </td>
+          <td>
+            <h1>''myscreenshot.jpg''</h1>
+            </td>
+   
+            <br>
+            <br>
+          
+        </tr>      
+      </tbody>
+
+    </table>
+</div>
+<br>
+<br>
+
+<div >
+      <h1  >
+        <font color = "black">Eddig készített fotók : [ {{photodb}} ] </font>
+        </h1>
+      
+      <h1 >
+        <font color = "black">Az eddig elkészített fotók átlaga : [ {{photoAvg}} ]</font>
+        </h1>
+
+        <h1 >
+        <font color = "black">Az elkészített fotó minősége : [ {{photoQuality}} ]</font>
+        </h1>
+
+        <br>
+        <br>
+    
+  </div>
+
+<div>
+    
+    <button ion-button large color="blue" (click)="screenshot()">Do Screenshot</button>
+    <button ion-button large color="blue" (click)="delete()">Delete</button>
+  </div>
+
+   <ion-scroll scrollX="true">
+      </ion-scroll>
+      <ion-scroll scrollY="true">
+      </ion-scroll>
+      <ion-scroll scrollX="true" scrollY="true">
+      </ion-scroll>
+
+</ion-content>

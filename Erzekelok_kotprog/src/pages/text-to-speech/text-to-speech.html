@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Szöveg felolvasó</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Text</ion-label>
+    <ion-input [(ngModel)]="textInput" type="text"></ion-input>
+  </ion-item>
+
+    <button ion-button large color="dark" (click)="speak()">Felolvasás</button>
+
+</ion-content>
